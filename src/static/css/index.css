@@ -1,0 +1,135 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file>input[type='file'] {
+  display: none
+}
+
+.file>label {
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 29%);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file>label:hover {
+  border-color: hsl(0, 0%, 21%);
+}
+
+.file>label:active {
+  background-color: hsl(0, 0%, 96%);
+}
+
+.file>label>i {
+  padding-right: 5px;
+}
+
+.file--upload>label {
+  color: hsl(204, 86%, 53%);
+  border-color: hsl(204, 86%, 53%);
+}
+
+.file--upload>label:hover {
+  border-color: hsl(204, 86%, 53%);
+  background-color: hsl(204, 86%, 96%);
+}
+
+.file--upload>label:active {
+  background-color: hsl(204, 86%, 91%);
+}
+
+#preview {
+  width: auto;
+  height: auto;
+  display: block;
+
+}
+
+#modal_size {
+  max-width: max-content !important;
+}
+
+.form_data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.submit_button{
+  padding: 5%;
+}
+
+@media (max-width: 650px) {
+  .form_data{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+}
+
+
+#myModalLabel{
+  font-family: sans;
+  font-variant: all-petite-caps;
+}
